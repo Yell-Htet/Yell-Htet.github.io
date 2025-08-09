@@ -1,0 +1,79 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #f4f4f4;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('photo-bg.jpg') no-repeat center center/cover;
+      opacity: 0.15;
+      z-index: -1;
+    }
+    /* Profile image */
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #ff3b3b;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(255, 59, 59, 0.4);
+    }
+    h1 {
+      font-size: 3rem;
+      color: #ff3b3b;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 15px auto;
+      color: #cccccc;
+    }
+    .skills {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .skill {
+      background: rgba(255, 59, 59, 0.1);
+      border: 1px solid #ff3b3b;
+      padding: 6px 14px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+    a.email {
+      margin-top: 20px;
+      display: inline-block;
+      color: #ff3b3b;
+      text-decoration: none;
+      border: 1px solid #ff3b3b;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    a.email:hover {
+      background: #ff3b3b;
+      color: #0f0f0f;
+    }
+  
